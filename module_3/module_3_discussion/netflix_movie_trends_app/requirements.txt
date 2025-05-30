@@ -1,4 +1,4 @@
 fuzzywuzzy
-matplotlib.pyplot
+matplotlib
 python-Levenshtein
 
