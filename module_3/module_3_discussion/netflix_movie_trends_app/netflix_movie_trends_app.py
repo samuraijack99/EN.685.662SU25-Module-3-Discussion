@@ -3,12 +3,15 @@ import pandas as pd
 from fuzzywuzzy import process
 import matplotlib.pyplot as plt
 import joblib 
+import os
 
 st.set_page_config(layout="wide")
 
 # Load dataset
 @st.cache_data
 def load_data():
+    st.write("Current working directory:", os.getcwd())
+    st.write("Files in current directory:", os.listdir())
     return pd.read_csv("netflix_dataset.csv")
 
 df_netflix = load_data()
