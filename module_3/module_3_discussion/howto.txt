@@ -1,0 +1,29 @@
+-Build and Start the Container:
+
+docker-compose up --build
+
+-Stop the Container: 
+
+docker-compose down
+
+-Access the container:
+
+docker exec -it dev_environment bash
+
+OR
+
+docker images
+docker start -ai dev_environment
+docker exec -it dev_environment bash
+conda activate en685662
+python -m ipykernel install --user --name en685662 --display-name "Python (en685648)"
+jupyter notebook --allow-root --ip=0.0.0.0 --no-browser
+
+
+
+-Source conda in the current shell:
+
+conda init
+source ~/.bashrc
+conda activate en685662
+

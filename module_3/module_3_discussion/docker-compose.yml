@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  dev-environment:
+    build:
+      context: .
+      dockerfile: Dockerfile  # The Dockerfile in the current directory
+    container_name: module_3_discussion
+    ports:
+      - "8501:8501"  # Expose Streamlit
+    volumes:
+      - ./workspace:/workspace  # Sync local files with the container
+    environment:
+      - CONDA_DEFAULT_ENV=base  # Automatically activates the default Conda environment
+    tty: true  # Keeps the container running
