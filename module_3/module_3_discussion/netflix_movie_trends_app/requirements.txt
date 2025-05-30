@@ -1,2 +1,4 @@
 fuzzywuzzy
+matplotlib.pyplot
 python-Levenshtein
+
