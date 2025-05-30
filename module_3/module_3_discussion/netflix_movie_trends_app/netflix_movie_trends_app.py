@@ -9,7 +9,7 @@ st.set_page_config(layout="wide")
 # Load dataset
 @st.cache_data
 def load_data():
-    return pd.read_csv("Netflix Datasets Evaluation MS Excel.csv")
+    return pd.read_csv("netflix_dataset.csv")
 
 df_netflix = load_data()
 
