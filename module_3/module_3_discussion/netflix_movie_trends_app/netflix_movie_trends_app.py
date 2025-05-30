@@ -1,14 +1,7 @@
 import streamlit as st
 import pandas as pd
-import time  # Importing time for simulating loading
-import requests
 from fuzzywuzzy import process
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
-from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
-import seaborn as sns
 import matplotlib.pyplot as plt
-from tqdm import tqdm
 import joblib 
 
 st.set_page_config(layout="wide")
