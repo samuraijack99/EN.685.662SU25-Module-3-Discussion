@@ -1,4 +1,5 @@
 fuzzywuzzy
+joblib
 matplotlib
 python-Levenshtein
 
